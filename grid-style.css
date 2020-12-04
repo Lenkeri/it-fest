@@ -1,24 +1,42 @@
 body {
+  margin: 0;
   display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: 116px auto 410px;
+  min-height: 100vh;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: grid;
 }
 
 .main-navigation {
+  padding: 0 24px;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.main-navigation .header-logo {
+  justify-self: start;
+}
+.main-navigation .new-history {
+  justify-self: end;
 }
 
 .main-menu {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .main {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 700px 600px 820px 240px 1026px;
+  /* grid-template-rows: 700px 600px 820px 240px 1026px; */
 }
 
 .find-story {
@@ -84,18 +102,45 @@ body {
   grid-template-columns: 1/2;
 }
 
-footer {
+.main-footer {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-template-rows: auto 140px 150px auto;
+}
+.main-footer::before {
+  content: "";
+}
+
+.footer-navigation {
+  display: grid;
+  padding: 0 150px;
+  width: 700px;
+
+}
+.footer-navigation a {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  justify-self: center;
+  align-self: center;
+}
+.footer-navigation ul {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
 }
 
 .footer-menu {
+  padding: 0;
+  margin: 0;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns:  repeat(5, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
 }
-
+.footer-menu::after{
+  content: "";
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
 .footer-menu ul {
   display: grid;
   grid-template-rows: 1fr;
@@ -103,17 +148,18 @@ footer {
 }
 
 .social {
-  display: grid;
-  grid-template-columns: 1fr ;
-  grid-template-rows: 1fr;
+  display: flex;
+  align-items: center;
 }
-
 .social ul {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
+  gap: 24px;
 }
 
 .privacy {
   display: flex;
+  flex-direction: row-reverse;
 }

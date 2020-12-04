@@ -14,11 +14,23 @@
 		url('./fonts/gilroy-bold.woff') format('woff'); /* Chrome < 4, Legacy iOS */
 }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
 :root {
   --color-black: #000;
   --color-white: #fff;
   --color-orange: #F7941E;
   --color-grey: #F1F1F2;
+  --color-grey-2: #FAFAFA;
 }
 
 a {
@@ -40,10 +52,12 @@ body {
 }
 .main-menu a {
   color: var(--color-black);
+  margin: 15px;
 }
 
-.new-history a {
+.new-history {
   text-transform: uppercase;
+  padding: 12px 24px;
   color: var(--color-orange);
   background-color: var(--color-white);
   border: 1px solid var(--color-orange);
@@ -138,6 +152,13 @@ body {
   color: var(--color-white);
 }
 
+footer {
+  background-color: var(--color-grey-2);
+}
+
+.footer-navigation {
+  border-bottom: 1px solid var(--color-black);
+}
 .footer-menu {
   font-size: 14px;
   line-height: 20px;
@@ -148,8 +169,20 @@ body {
   text-decoration: none;
   color: var(--color-black);
 }
+.social ul {
+  list-style: none;
+}
+.social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-black);
+  border-radius: 50%;
+}
 
-.privacy {
+.privacy h2, .privacy p {
+  margin: 0 7px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
