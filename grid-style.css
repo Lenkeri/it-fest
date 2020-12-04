@@ -93,14 +93,33 @@ body {
 
 .last-stories {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-rows: 120px 120px 1fr;
+  justify-items: center;
+  min-height: 820px;
 }
-
-.last-stories ul {
+.last-stories h2 {
+  align-self: end;
+}
+.stories-list {
+  align-self: start;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
+  gap: 30px;
+}
+
+.stories-list li {
+  min-height: 436px;
+  display: flex;
+  flex-direction: column;
+
+}
+.stories-list img {
+  order: -1;
+}
+.stories-list a {
+  margin-top: auto;
+  margin-bottom: 30px;
 }
 
 .write-us {

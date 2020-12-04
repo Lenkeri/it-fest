@@ -104,23 +104,37 @@ body {
 .last-stories {
   background-color: var(--color-white);
 }
+
 .last-stories h2 {
+  font-weight: 400;
+  margin: 0;
   font-size: 32px;
   line-height: 38px;
 }
-.last-stories h3 {
+
+
+.stories-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.stories-list li {
+  background-color: var(--color-grey-2);
+}
+.stories-list h3 {
+  padding-left: 20px;
+  font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 }
-.last-stories a {
+.stories-list a {
+  margin-left: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
-  font-family: 'Roboto', sans-serif;
   color: var(--color-black);
 
 }
-
 .write-us {
   background-color: var(--color-orange);
 }
