@@ -1,0 +1,119 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 116px auto 410px;
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 700px 600px 820px 240px 1026px;
+}
+
+.find-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+
+.find-story img {
+  grid-column: 2/3;
+  grid-row: 1/-1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.about img {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+
+.last-stories {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 4fr;
+}
+
+.last-stories ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.write-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.best-stories {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 250px 1fr;
+}
+
+.best-stories ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.best-stories ul li:first-of-type {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.best-stories ul li:first-of-type img {
+  grid-template-columns: 1/2;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer-menu {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns:  repeat(5, 1fr);
+}
+
+.footer-menu ul {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.social {
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr;
+}
+
+.social ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.privacy {
+  display: flex;
+}
