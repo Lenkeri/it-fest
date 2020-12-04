@@ -41,7 +41,7 @@ body {
 
 .find-story .container{
   display: grid;
-  grid-template-columns: 160px 1fr 1fr;
+  grid-template-columns: 160px 1fr 720px;
   grid-template-rows: 2fr 1fr 1fr;
   justify-items: start;
   align-items: center;
@@ -63,15 +63,32 @@ body {
   align-self: start;
 }
 
-.about {
+.about .container{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 720px 112px 1fr 160px;
   grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
 }
-
+.about .container::before {
+  content: "";
+  grid-row: 1/-1;
+  grid-column: 2/3;
+}
+.about .container::after {
+  content: "";
+  grid-row: 1/-1;
+  grid-column: -1/-2;
+}
 .about img {
   grid-row: 1/-1;
   grid-column: 1/2;
+}
+.about h2 {
+  align-self: end;
+}
+.about a {
+  justify-self: start;
+  align-self: start;
 }
 
 .last-stories {
