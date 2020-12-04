@@ -72,10 +72,13 @@ body {
   line-height: 69px;
 }
 .find-story a {
+  font-size: 18px;
+  line-height: 22px;
   color: var(--color-white);
   background-color: var(--color-orange);
   text-transform: uppercase;
   border-radius: 5px;
+  padding: 19px 24px;
 }
 
 .about {
