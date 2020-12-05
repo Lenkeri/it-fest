@@ -122,10 +122,23 @@ body {
   margin-bottom: 30px;
 }
 
-.write-us {
+.write-us .container {
+  min-height: 240px;
+  width: 970px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
+  grid-template-rows: 1fr 1fr;
+  justify-items: start;
+  align-items: start;
+}
+.write-us a {
+  grid-row: 1/-1;
+  grid-column: -1/-2;
+  align-self: center;
+  justify-self: end;
+}
+.write-us h2 {
+  align-self: end;
 }
 
 .best-stories {
@@ -137,7 +150,7 @@ body {
 .best-stories ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .best-stories ul li:first-of-type {

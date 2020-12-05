@@ -139,10 +139,14 @@ body {
   background-color: var(--color-orange);
 }
 .write-us a {
+  font-size: 18px;
+  line-height: 22px;
   background-color: var(--color-black);
   color: var(--color-white);
   text-transform: uppercase;
+  border: 1px solid var(--color-black);
   border-radius: 5px;
+  padding: 12px 24px;
 }
 
 .best-stories {
