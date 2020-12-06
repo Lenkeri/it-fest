@@ -1,5 +1,7 @@
 body {
-  margin: 0;
+  box-shadow: 0 0 30px 0#9493CB;
+  width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: 116px auto 410px;
   min-height: 100vh;
@@ -41,7 +43,7 @@ body {
 
 .find-story .container{
   display: grid;
-  grid-template-columns: 160px 1fr 720px;
+  grid-template-columns: 100px 1fr 720px;
   grid-template-rows: 2fr 1fr 1fr;
   justify-items: start;
   align-items: center;
@@ -65,7 +67,7 @@ body {
 
 .about .container{
   display: grid;
-  grid-template-columns: 720px 112px 1fr 160px;
+  grid-template-columns: 720px 100px 1fr 160px;
   grid-template-rows: 1fr 2fr 1fr;
   align-items: center;
 }
