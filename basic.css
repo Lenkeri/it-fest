@@ -286,3 +286,23 @@ footer {
 .stories-list a:hover {
   color: var(--color-hover);
 }
+
+.write-us a:hover{
+  background-color: var(--color-hover);
+}
+
+.write-us a:active{
+  opacity: 0.7;
+}
+
+.best-stories a:hover {
+  color: var(--color-hover);
+}
+
+.best-stories a:active {
+  color: var(--color-orange);
+}
+
+.last-stories img {
+  pading-left: 10px;
+}

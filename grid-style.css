@@ -103,11 +103,16 @@ body {
   align-self: end;
 }
 .stories-list {
+  width: 1380px;
   align-self: start;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 30px;
+}
+
+.stories-list img {
+  margin-left: 25px
 }
 
 .stories-list li {
