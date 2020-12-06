@@ -189,12 +189,14 @@ body {
 
 .no-picture {
   display: grid;
+  grid-template-rows: 100px  150px 40px;
   width: 570px;
   height: 290px;
   margin-left: 135px;
 }
 
 .no-picture-2 {
+  grid-template-rows: 100px  150px 40px;
   display: grid;
   width: 570px;
   height: 290px;
@@ -236,12 +238,9 @@ footer {
   line-height: 20px;
 }
 
-.main-menu a:hover {
-  color: var(--color-hover);
-}
-
 .main-menu a:hover,
-.stories-list a:hover {
+.stories-list a:hover,
+.footer-menu a:hover {
   color: var(--color-hover);
 }
 
@@ -249,7 +248,8 @@ footer {
   color: var(--color-on-site) !important;
 }
 
-.main-menu a:active {
+.main-menu a:active,
+.footer-menu a:active {
   color: var(--color-orange);
 }
 
