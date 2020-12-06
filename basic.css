@@ -30,7 +30,7 @@
   --color-white: #fff;
   --color-orange: #D5B199;
   --color-grey: #FFFFEE;
-  --color-grey-2: #f5f5f5;
+  --color-grey-2: #f1f1f1;
   --color-hover: #9C7168;
   --color-on-site: #FDAD54;
   --color-team: #AEBA92;
@@ -181,6 +181,24 @@ body {
 }
 .with-picture a {
   color: var(--color-white);
+}
+
+.with-picture p {
+  color: var(--color-team);
+}
+
+.no-picture {
+  display: grid;
+  width: 570px;
+  height: 290px;
+  margin-left: 135px;
+}
+
+.no-picture-2 {
+  display: grid;
+  width: 570px;
+  height: 290px;
+  margin-left: 30px;
 }
 
 footer {
