@@ -43,7 +43,7 @@ body {
 
 .find-story .container{
   display: grid;
-  grid-template-columns: 100px 1fr 720px;
+  grid-template-columns: 135px 1fr 720px;
   grid-template-rows: 2fr 1fr 1fr;
   justify-items: start;
   align-items: center;
@@ -266,7 +266,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
