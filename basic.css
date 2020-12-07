@@ -28,9 +28,13 @@
 :root {
   --color-black: #000;
   --color-white: #fff;
-  --color-orange: #F7941E;
-  --color-grey: #F1F1F2;
-  --color-grey-2: #FAFAFA;
+  --color-orange: #D5B199;
+  --color-grey: #FFFFEE;
+  --color-grey-2: #f1f1f1;
+  --color-hover: #9C7168;
+  --color-on-site: #FDAD54;
+  --color-team: #AEBA92;
+  --color-on-site-pail: #FDBF79;
 }
 
 a {
@@ -74,7 +78,7 @@ body {
 .find-story a {
   font-size: 18px;
   line-height: 22px;
-  color: var(--color-white);
+  color: var(--color-grey);
   background-color: var(--color-orange);
   text-transform: uppercase;
   border: 1px solid var(--color-orange);
@@ -95,7 +99,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: var(--color-orange);
-  background-color: var(--color-white);
+  background-color: var(--color-grey);
   border: 1px solid var(--color-orange);
   border-radius: 5px;
   padding: 18px 24px;
@@ -179,6 +183,26 @@ body {
   color: var(--color-white);
 }
 
+.with-picture p {
+  color: var(--color-team);
+}
+
+.no-picture {
+  display: grid;
+  grid-template-rows: 100px  150px 40px;
+  width: 570px;
+  height: 290px;
+  margin-left: 135px;
+}
+
+.no-picture-2 {
+  grid-template-rows: 100px  150px 40px;
+  display: grid;
+  width: 570px;
+  height: 290px;
+  margin-left: 30px;
+}
+
 footer {
   background-color: var(--color-grey-2);
 }
@@ -212,4 +236,73 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+}
+
+.main-menu a:hover,
+.stories-list a:hover,
+.footer-menu a:hover {
+  color: var(--color-hover);
+}
+
+.current {
+  color: var(--color-on-site) !important;
+}
+
+.main-menu a:active,
+.footer-menu a:active {
+  color: var(--color-orange);
+}
+
+.stories-list a:active {
+  color: var(--color-orange) !important;
+}
+
+.best-stories ul {
+  list-style: none;
+}
+
+.find-story a:hover {
+  background-color: var(--color-on-site);
+  border-color: var(--color-on-site);
+}
+
+.find-story a:active {
+  background-color: var(--color-on-site-pail);
+  border-color: var(--color-on-site-pail);
+}
+
+.about a:hover,
+.new-history:hover {
+  color: var(--color-on-site);
+  border-color: var(--color-on-site);
+}
+
+.about a:active,
+.new-history:active {
+  color: var(--color-on-site-pail);
+  border-color: var(--color-on-site-pail);
+}
+
+.stories-list a:hover {
+  color: var(--color-hover);
+}
+
+.write-us a:hover{
+  background-color: var(--color-hover);
+}
+
+.write-us a:active{
+  opacity: 0.7;
+}
+
+.best-stories a:hover {
+  color: var(--color-hover);
+}
+
+.best-stories a:active {
+  color: var(--color-orange);
+}
+
+.last-stories img {
+  pading-left: 10px;
 }
