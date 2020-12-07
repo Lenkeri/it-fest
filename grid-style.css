@@ -103,7 +103,7 @@ body {
   align-self: end;
 }
 .stories-list {
-  width: 1380px;
+  /* width: 1380px;  нет, нет или еще раз нет */
   align-self: start;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -111,11 +111,8 @@ body {
   gap: 30px;
 }
 
-.stories-list img {
-  margin-left: 25px
-}
-
 .stories-list li {
+  width: 270px;
   min-height: 436px;
   display: flex;
   flex-direction: column;
@@ -151,47 +148,69 @@ body {
 .best-stories {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 150px;
+  grid-template-rows: 130px 120px 780px;
   justify-items: center;
-  align-items: center;
+  align-items: start;
+}
+.best-stories h2 {
+  align-self: end;
+}
+.best-stories p {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .best-stories ul {
+  padding: 0;
+  margin: 0;
+  width: 1170px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 370px 1fr;
+  column-gap: 30px;
+  row-gap: 40px;
 }
 
-.with-picture {
-  column-gap: 60px;
+.best-item {
+  box-sizing: border-box;
+  min-height: 290px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+}
+.best-item h3 {
+  margin: 0;
+}
+.best-item a {
+  margin-top: auto;
+}
+
+.best-item--picture {
+  padding: 0;
+  padding-right: 60px;
   grid-row: 1/2;
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  grid-template-columns: 400px 1fr;
   grid-template-rows: 1fr 2fr 1fr;
-  height: 370px;
-  width: 1170px;
-  margin-left: 135px;
+  justify-items: start;
+  align-items: start;
 }
-
-.with-picture p {
+.best-item--picture p {
   grid-row: 1/2;
   grid-column: 2/3;
 }
-
-.with-picture h3 {
-  grid-row: 2/3;
-  grid-column: 2/4;
+.best-item--picture h3 {
+  align-self: start;
 }
-
-.with-picture a {
-  grid-row: 3/4;
-  grid-column: 2/3;
-}
-
-.with-picture img {
-  grid-columns: 1/2;
+.best-item--picture img {
+  grid-column: 1/2;
   grid-row: 1/-1;
+}
+.best-item--picture a {
+  margin: 0;
+  margin-top: 20px;
 }
 
 .main-footer {
@@ -253,5 +272,4 @@ body {
 
 .privacy {
   display: flex;
-  flex-direction: row-reverse;
 }
